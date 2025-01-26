@@ -1,0 +1,6 @@
+@EPAM.Production.API_HostAddress = http://localhost:5164
+
+GET {{EPAM.Production.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

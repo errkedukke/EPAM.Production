@@ -3,12 +3,12 @@ using EPAM.Production.Repository.Model;
 using EPAM.Production.Repository.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-namespace EPAM.Production.Tests
+namespace EPAM.Production.Tests.Entity
 {
-    public class GenericRepositoryTests
+    public class ProductRepositoryTests
     {
         private ProductionDbContext _context;
-        private GenericRepository<Product> _repository;
+        private ProductRepository _repository;
 
         [SetUp]
         public void Setup()
@@ -18,7 +18,7 @@ namespace EPAM.Production.Tests
                 .Options;
 
             _context = new ProductionDbContext(options);
-            _repository = new GenericRepository<Product>(_context);
+            _repository = new ProductRepository(_context);
         }
 
         [TearDown]

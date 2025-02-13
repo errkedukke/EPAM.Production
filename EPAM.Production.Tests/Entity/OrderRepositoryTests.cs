@@ -3,7 +3,7 @@ using EPAM.Production.Repository.Model;
 using EPAM.Production.Repository.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-namespace EPAM.Production.Tests;
+namespace EPAM.Production.Tests.Entity;
 
 public class OrderRepositoryTests
 {
